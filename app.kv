@@ -1,0 +1,48 @@
+# create your Kivy layout in the kv language here
+BoxLayout:
+    orientation: 'horizontal'
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint_x:0.25
+        Button:
+            text: 'List Required'
+            state: 'down'
+        Button:
+            text: 'List completed'
+        Label:
+            text: 'add new book'
+        Label:
+            text: 'Title'
+        TextInput:
+            multiline:False
+            text: ''
+        Label:
+            text: 'author'
+        TextInput:
+            multiline:False
+        Label:
+            text: 'Pages'
+            multiline:False
+        TextInput:
+            multiline:False
+        Button:
+            text:'Add Book'
+        Button:
+            text:'clear'
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: "total pages to read"
+            size_hint_y:0.1
+        BoxLayout:
+            orientation: 'vertical'
+            id:"itemid"
+        Label:
+            text: "mark book as completed"
+            size_hint_y:0.1
+
+
+
+
+
+
